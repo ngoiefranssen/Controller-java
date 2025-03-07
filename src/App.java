@@ -2,18 +2,15 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        // try (// System.out.println("Hello, World !");
-                // sysout, sout, .....
-        // Scanner scanner = new Scanner(System.in)) {
-            // System.out.println("Saisir le message : ");
+        Scanner scanner = new Scanner(System.in);
 
-            // String message = scanner.nextLine();
+        System.out.println("Hello : ");
 
-            int start = 1;
-            int enc = 16;
+        String message = scanner.nextLine();
 
-            System.out.println(start + enc);
-        // }
+        System.out.println(message);
+
+
     }
 }
 
