@@ -3,19 +3,21 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Donnez une corde: ");
+        String text = String.valueOf(scanner.nextLine());
+        System.out.println("Vous avez saisi: " + text);
+        
+        System.out.println("Donnez un entier: ");
+        int length = Integer.valueOf(scanner.nextLine());
+        System.out.println("Vous avez saisi: " + length);
 
-        System.out.println("Enter the first number: ");
-        int value = Integer.valueOf(scanner.nextInt());
+        System.out.println("Donnez un double: ");
+        double value = Double.valueOf(scanner.nextLine());
         System.out.println("Vous avez saisi: " + value);
 
-        Scanner scanner2  = new Scanner(System.in);
-        System.out.println("Enter the second number: ");
-        int value2 = Integer.valueOf(scanner2.nextInt());
-
-        System.out.println("Vous avez saisi: " + value2);
-        int sum = value + value2;
-        System.out.println("The sum of the two numbers is: " + sum);
-        scanner.close();
-}
+        System.out.println("Donnez un booléen: ");
+        boolean bool = Boolean.valueOf(scanner.nextLine());
+        System.out.println("Vous avez saisi: " + bool);
+    }
 
 }
