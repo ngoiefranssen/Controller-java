@@ -1,15 +1,14 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        String name = "Ngoie";
-        int age = 20;
-        double height = 1.7;
-        boolean isStudent = true;
+        String zetor = "zétor";
+        int poulet   = 90000;
+        double Bacon = 0.1;
 
-        System.out.println("Hello, my name is " + name);
-        System.out.println("I am " + age + " years old");
-        System.out.println("I am " + height + "m tall");
-        System.out.println("I am a student: " + isStudent);
+        System.out.println("Poulet: " + poulet);
+        System.out.println("Bacon (kg): " + Bacon);
+        System.out.println("Tracteur: " + zetor);
+        System.out.println("Et enfin, un résumé: " + poulet + " " + Bacon + " " + zetor);
     }
 }
 
