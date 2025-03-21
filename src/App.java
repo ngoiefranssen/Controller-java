@@ -8,17 +8,24 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         try {
-            System.out.println("Donnez une an: ");
+            System.out.println("Quel âge as-tu ? ");
             String number = scanner.nextLine();
             System.out.println("Vous avez saisi: " + number);
 
             int year = Integer.parseInt(number);
-            if(year > 0){
-                System.out.println("Le numero saisi est positif");
-            } else if(year < 0) {
-                System.out.println("Le numero saisi est négatif");
-            } else {
-                System.out.println("Le numero saisi est zéro");
+
+            switch (year) {
+                case 12:
+                    System.out.println("Vous n'êtes pas un adulte");
+                    break;
+                case 18:
+                    System.out.println("Vous êtes un adulte");
+                    break;
+                case 32:
+                    System.out.println("Vous êtes un adulte");
+                    break;
+                default:
+                    break;
             }
 
         //     System.out.println("Enter an integer: ");
