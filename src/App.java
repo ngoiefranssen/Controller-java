@@ -7,6 +7,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         try {
+
             System.out.println("Donner des points : ");
             String input = scanner.nextLine();
 
