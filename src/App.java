@@ -7,14 +7,32 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner reader = new Scanner(System.in);
 
-        System.out.println("Quel est votre age ? ");
-        Integer input = Integer.parseInt(reader.nextLine());
+        int number = 0;
 
-        if(input < 0 && !(input > 125)) {
-            System.out.println("OK: ");
-        } else {
-            System.out.println("indesirable : ");
+        while (true) {
+            System.out.println("Saisir un nombre 0 pour arreter:");
+
+            if (!reader.hasNextLine()) {
+                continue;
+            }
+
+            String input = reader.nextLine();
+            
+            if (Integer.parseInt(input) < number) {
+                System.out.println("Numéro impropre: " + Integer.parseInt(input));
+                System.out.println("Saisir a nouveau le numéro: ");
+                continue;
+            }else if (Integer.parseInt(input) == number) {
+                break;
+            }else if(Integer.parseInt(input) > number){
+                int parsedInput = Integer.parseInt(input);
+                int result = parsedInput * parsedInput;
+                System.out.println("Resul " + result);
+                break;
+            }
         }
+
+        System.out.println("Out");
 
         reader.close();
     }
