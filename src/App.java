@@ -7,32 +7,21 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner reader = new Scanner(System.in);
 
-        int number = 0;
-
         while (true) {
-            System.out.println("Saisir un nombre 0 pour arreter:");
-
-            if (!reader.hasNextLine()) {
+            System.out.println("Input a number ");
+            int number = Integer.valueOf(reader.nextLine());
+        
+            if (number < 0) {
+                System.out.println("Unfit number");
                 continue;
             }
-
-            String input = reader.nextLine();
-            
-            if (Integer.parseInt(input) < number) {
-                System.out.println("Numéro impropre: " + Integer.parseInt(input));
-                System.out.println("Saisir a nouveau le numéro: ");
-                continue;
-            }else if (Integer.parseInt(input) == number) {
-                break;
-            }else if(Integer.parseInt(input) > number){
-                int parsedInput = Integer.parseInt(input);
-                int result = parsedInput * parsedInput;
-                System.out.println("Resul " + result);
+        
+            if (number == 0) {
                 break;
             }
+        
+            System.out.println(number * number);
         }
-
-        System.out.println("Out");
 
         reader.close();
     }
