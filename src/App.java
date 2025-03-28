@@ -16,12 +16,11 @@ public class App {
             if (number == 0) {
                 break;
             }
-        
-            if (number == 1) {
-                one = one + 1;
+            if (number > 0) {
+                one = com.sun(number)
             }
-
         }
+
         System.out.println("One: " + one);
 
         reader.close();
