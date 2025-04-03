@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int number;
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Write numbers, negative numbers are invalid: ");
 
         int sum = 0;
         int validNumbers = 0;
@@ -25,9 +26,9 @@ public class App {
             }
         
             sum += input;
-            validNumbers++
+            validNumbers++;
         }
 
-        scanner.close();
+        reader.close();
     }
 }
