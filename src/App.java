@@ -4,19 +4,29 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number;
-        int result = 0;
 
-        int i = 0;
-        while (true) {
-            result += 3; // shorthand for result = result + 3
-            i++;  // shorthand for i = i + 1
+        int sum = 0;
+        int validNumbers = 0;
+        int invalidNumbers = 0;
         
-            if (i == 4) {
+        while (true) {
+            int input = Integer.valueOf(reader.nextLine());
+        
+            if (input == 0) {
+                System.out.println("Sum of valid numbers: " + sum);
+                System.out.println("Valid numbers: " + validNumbers);
+                System.out.println("Invalid numbers: " + invalidNumbers);
                 break;
             }
-        }
         
-        System.out.println(result);
+            if (input < 0) {
+                invalidNumbers++;
+                continue;
+            }
+        
+            sum += input;
+            validNumbers++
+        }
 
         scanner.close();
     }
