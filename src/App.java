@@ -4,30 +4,20 @@ public class App {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
-        System.out.print("Write numbers, negative numbers are invalid: ");
+        int sum;
 
-        int sum = 0;
-        int validNumbers = 0;
-        int invalidNumbers = 0;
-        
         while (true) {
+            System.out.print("Saisir un numero: ");
             int input = Integer.valueOf(reader.nextLine());
         
-            if (input == 0) {
-                System.out.println("Sum of valid numbers: " + sum);
-                System.out.println("Valid numbers: " + validNumbers);
-                System.out.println("Invalid numbers: " + invalidNumbers);
+            if (input == -1) {
                 break;
             }
-        
-            if (input < 0) {
-                invalidNumbers++;
-                continue;
-            }
-        
-            sum += input;
-            validNumbers++;
+           
         }
+
+        System.out.println("Au revoir");
+        // System.out.println("Sum: " + input);
 
         reader.close();
     }
