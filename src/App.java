@@ -2,20 +2,25 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        printApp();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        int first = Integer.valueOf(scanner.nextLine());
+
+        System.out.print("Enter the second number: ");
+        int second = Integer.valueOf(scanner.nextLine());
+
+        System.out.print("Enter the third number: ");
+        int third = Integer.valueOf(scanner.nextLine());
+
+        double averageResult = division(first, second, third);
+
+        System.out.print("The average of the numbers: " + averageResult);
+        
+        scanner.close();
     }
 
-    public static void printApp() {
-
-        Scanner render = new Scanner(System.in);
-        System.out.println("Entrez un name du programme : ");
-        String show = String.valueOf(render.nextLine());
-
-        if(show.equals(show)) {
-            System.out.println("Le name du programme est la suivante : " + show);
-        }
-
-        System.out.println("Fin du programme. " + show);
-        render.close();
+    public static double division(int numerator, int denominator, int other) {
+        return (numerator + denominator + other) / 3.0;
     }
 }
