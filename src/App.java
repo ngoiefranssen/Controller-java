@@ -6,6 +6,7 @@ public class App {
     }
 
     public static void flessmallest() {
+        
         Scanner reader = new Scanner(System.in);
         int values = 0;
         int sum = 0;
