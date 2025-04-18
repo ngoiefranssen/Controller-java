@@ -13,7 +13,6 @@ public class App {
         while (true) {
             System.out.println("Provide a value, a negative value ends the program");
             int value = Integer.valueOf(reader.nextLine());
-            
             if (value < 0) {
                 break;
             }
@@ -22,10 +21,12 @@ public class App {
             sum = sum + value;
         }
 
-        if(sum == 0){
+        if (sum == 0) {
             System.out.println("The average of the values could not be calculated.");
-        }else{
+        } else {
             System.out.println("Average of values: " + (1.0 * sum / values));
         }
+
+        reader.close();
     }
 }
