@@ -22,8 +22,8 @@ public class App {
                 break;
             }
 
-            values = values + 1;
-            sum = sum + value;
+            values = values + 1; // result 1
+            sum = sum + value; // sum is value
         }
 
         System.out.println("-- loop exited");
