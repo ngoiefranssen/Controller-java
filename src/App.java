@@ -5,16 +5,17 @@ public class App {
         arrayList();
     }
 
-    public static void arrayList() {
-        
-        ArrayList<Double> doubl = new ArrayList<>();
+    public static String arrayList() {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        list.add("World");
+        list.add("Java");
+        list.add("Programming");
 
-        Double d = 2.3;
-        Double d_ = 7.7;
+        for (String str : list) {
+            System.out.println(str);
+        }
 
-        Double sum = d + d_;
-        doubl.add(sum);
-
-        System.out.println(doubl);
+        return "ArrayList example completed.";
     }
 }
