@@ -12,10 +12,11 @@ public class App {
         list.add("Java");
         list.add("Programming");
 
-        for (String str : list) {
-            System.out.println(str);
-        }
+        list.removeAll(list);
+        list.add("New Element");
 
-        return "ArrayList example completed.";
+       System.out.println("List after removing all elements and adding a new one: " + list);
+
+        return list.toString();
     }
 }
