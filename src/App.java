@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
@@ -6,17 +7,20 @@ public class App {
     }
 
     public static String arrayList() {
-        ArrayList<String> list = new ArrayList<>();
-        list.add("Hello");
-        list.add("World");
-        list.add("Java");
-        list.add("Programming");
+        Scanner reader = new Scanner(System.in);
 
-        list.removeAll(list);
-        list.add("New Element");
+        int[] numbers = new int[5];
+        numbers[0] = 42;
+        numbers[1] = 13;
+        numbers[2] = 12;
+        numbers[3] = 7;
+        numbers[4] = 1;
 
-       System.out.println("List after removing all elements and adding a new one: " + list);
+        System.out.println("Which index should we access? ");
+        int index = Integer.valueOf(reader.nextLine());
 
-        return list.toString();
+        String result = "The value at index " + index + " is " + numbers[index];
+        System.out.println(result);
+        return result;
     }
 }
