@@ -8,27 +8,13 @@ public class App {
     public static String arrayList() {
         Scanner reader = new Scanner(System.in);
 
-        System.out.print("How many numbers? ");
-        int howMany = Integer.valueOf(reader.nextLine());
+        String[] months = new String[12];
+        double[] approximations = new double[100];
 
-        int[] numbers = new int[howMany];
+        months[0] = "January";
+        approximations[0] = 3.14;
+        System.out.println("Enter the name of the month:" + months[0] + " and the approximation of pi:" + approximations[0]);
 
-        System.out.println("Enter the numbers: ");
-
-        int index = 0;
-        while (index < numbers.length) {
-            numbers[index] = Integer.valueOf(reader.nextLine());
-            index = index + 1;
-        }
-
-        System.out.println("Here are the numbers again: ");
-
-        index = 0;
-        while (index < numbers.length) {
-            System.out.println(numbers[index]);
-            index = index + 1;
-        }
-
-        return "Number" +  numbers;
+        return "answer";
     }
 }
