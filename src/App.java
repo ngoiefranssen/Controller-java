@@ -6,15 +6,15 @@ public class App {
     }
 
     public static String arrayList() {
-        Scanner reader = new Scanner(System.in);
+        String[] arr = {"apple.", "banana.", "cherry.", "date.", "elderberry."};
+        int[] arr2 = {1, 2, 3, 4, 5};
 
-        String[] months = new String[12];
-        double[] approximations = new double[100];
+        int i = 0;
+        while (i < arr.length) {
+            System.out.println(arr[i] + " " + arr2[i]);
+            i++;
+        }
 
-        months[0] = "January";
-        approximations[0] = 3.14;
-        System.out.println("Enter the name of the month:" + months[0] + " and the approximation of pi:" + approximations[0]);
-
-        return "answer";
+        return "done";
     }
 }
