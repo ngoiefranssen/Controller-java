@@ -8,23 +8,27 @@ public class App {
     public static String arrayList() {
         Scanner reader = new Scanner(System.in);
 
-        int[] numbers = new int[5];
+        System.out.print("How many numbers? ");
+        int howMany = Integer.valueOf(reader.nextLine());
 
-        numbers[0] = 1;
-        numbers[1] = 97;
-        numbers[2] = 71;
-        numbers[3] = 4;
-        numbers[4] = 17;
+        int[] numbers = new int[howMany];
 
-        System.out.println("The array has " + numbers.length + " elements.");
+        System.out.println("Enter the numbers: ");
 
         int index = 0;
-        
+        while (index < numbers.length) {
+            numbers[index] = Integer.valueOf(reader.nextLine());
+            index = index + 1;
+        }
+
+        System.out.println("Here are the numbers again: ");
+
+        index = 0;
         while (index < numbers.length) {
             System.out.println(numbers[index]);
             index = index + 1;
         }
 
-        return "ArrayList";
+        return "Number" +  numbers;
     }
 }
