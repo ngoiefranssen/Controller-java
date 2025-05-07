@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
@@ -10,17 +9,22 @@ public class App {
         Scanner reader = new Scanner(System.in);
 
         int[] numbers = new int[5];
-        numbers[0] = 42;
-        numbers[1] = 13;
-        numbers[2] = 12;
-        numbers[3] = 7;
-        numbers[4] = 1;
 
-        System.out.println("Which index should we access? ");
-        int index = Integer.valueOf(reader.nextLine());
+        numbers[0] = 1;
+        numbers[1] = 97;
+        numbers[2] = 71;
+        numbers[3] = 4;
+        numbers[4] = 17;
 
-        String result = "The value at index " + index + " is " + numbers[index];
-        System.out.println(result);
-        return result;
+        System.out.println("The array has " + numbers.length + " elements.");
+
+        int index = 0;
+        
+        while (index < numbers.length) {
+            System.out.println(numbers[index]);
+            index = index + 1;
+        }
+
+        return "ArrayList";
     }
 }
