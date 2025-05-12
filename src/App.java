@@ -6,7 +6,7 @@ public class App {
     }
 
     public static String arrayList() {
-        String[] arr = {"Apple.", "Banana.", "Cherry.", "Date.", "Elderberry."};
+        String[] arr = {"Apple.", "Banana.", "Cherry.", "Date.", "Elderberry."};        
         int[] arr2 = {1, 2, 3, 4, 5};
 
         int i = 0;
