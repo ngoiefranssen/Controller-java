@@ -7,13 +7,10 @@ public class App {
 
     public static String arrayList() {
         String[] arr = {"Apple.", "Banana.", "Cherry.", "Date.", "Elderberry."};        
-        int[] arr2 = {1, 2, 3, 4, 5};
+        int[] arr2 = {1, 2, 3, 4, 7};
 
-        int i = 0;
-
-        while (i < arr.length) {
+        for(int i=0; i < arr.length; i++) {
             System.out.println(arr[i] + " " + arr2[i]);
-            i++;
         }
 
         return "done";
