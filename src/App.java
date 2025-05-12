@@ -1,4 +1,4 @@
-// import java.util.Scanner;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
@@ -6,13 +6,27 @@ public class App {
     }
 
     public static String arrayList() {
-        String[] arr = {"Apple.", "Banana.", "Cherry.", "Date.", "Elderberry."};        
-        int[] arr2 = {1, 2, 3, 4, 7};
+       
+        Scanner reader = new Scanner(System.in);
 
-        for(int i=0; i < arr.length; i++) {
-            System.out.println(arr[i] + " " + arr2[i]);
+        String lastResponse = "";
+
+        while (true) {
+            System.out.println("Enter description and age ( description or press Enter to finish):");
+            String input = reader.nextLine();
+
+            if (input.equals("")) {
+            break;
+            }
+
+            String[] parts = input.split(" ");
+            lastResponse = parts[parts.length - 1];
+            System.out.println("response: " + lastResponse);
         }
 
-        return "done";
+        System.out.println("Last response: " + lastResponse);
+
+        reader.close();
+        return "End of input";
     }
 }
