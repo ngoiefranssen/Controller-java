@@ -6,7 +6,7 @@ public class App {
     }
 
     public static String arrayList() {
-       
+
         Scanner reader = new Scanner(System.in);
 
         String lastResponse = "";
@@ -15,9 +15,8 @@ public class App {
             System.out.println("Enter description and age ( description or press Enter to finish):");
             String input = reader.nextLine();
 
-            if (input.equals("")) {
-            break;
-            }
+            if (input.equals(""))
+                break;
 
             String[] parts = input.split(" ");
             lastResponse = parts[parts.length - 1];
